@@ -1,0 +1,33 @@
+Alrighty, here is how to setup Whonix for safe, tor-filtered browsing as a VM. 
+My Hypervisor (what I use to manage / run my Virtual Machines) will be Virtualbox, which is recommended on the Whonix website.
+---
+Step 1: Go to the Whonix (https://www.whonix.org/) webpage.
+- In the top toolbar, click 'Download'.
+- For me, I will be installing it within VirtualBox, so click VirtualBox.
+Scroll down a little and press the big blue 'Download Whonix ™ Xfce' Button.
+
+This will begin a 2.1GB Install for the Whonix XFCE .ova file.
+This file is a Virtual Appliance file. It holds multiple files into one, like an archive, making it easier to install into a hypervisor such as VirtualBox.
+
+- Once that has finished downloading, which for me took like 30 minutes coz my internet is just 'lightspeed', move on to Step 2.
+
+Step 2: Open VirtualBox and Import the Downloaded .ova file.
+----
+Now that we have our .ova file downloaded, you can either right-click it, go to 'Open With: ' and open with VirtualBox,
+or you can go into virtual box, and on the main page go File > Import Appliance, and select the .ova file.
+
+Once you accept the popups, you will have Whonix-Gateway and Whonix-Workstation installed into virtualbox.
+
+Step 3: The final (basic) setup.
+
+Now, to get you going on your first steps into the exciting Whonix OS, you will need to understand quickly how the gateway and workstation differ.
+
+The Gateway is the vm that acts simply as a tor gateway, like a net that catches things, then forces them through the tor network, ensuring anonymity.
+The Workstation is what you open secondly, after getting the gateway up and running, and you use it to perform your activies through tor anonymously.
+ALL traffic is routed through Tor, and the workstation is isolated from the internet, and only connects with the gateway to get its connection.
+
+WITH THIS SEEMINGLY SIMPLE SYSTEM, it grants the user a lot of op security, and this is why Whonix is a great option for people whos threat model involves not being found in the first place :).
+
+Congrats, you can now get up to all sorts on the dark web. For legal reasons, i do not condone that you get up to all sorts on the dark web however.
+
+Thanks for reading, leave some comments if you enjoyed - LD.
